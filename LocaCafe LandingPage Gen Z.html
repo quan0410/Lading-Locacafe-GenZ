@@ -17,13 +17,13 @@
 </head>
 <body>
 <div class="wraper">
-    <div id="side" class="section">
+    <div id="slider" class="section">
         <div class="section-background"></div>
         <div class="overlay"></div>
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light ">
                 <div class="container-fluid">
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav flex">
                             <a class="nav-link active" aria-current="page" href="LocaCafe LandingPage Gen Z.html">
                                 <div class="image transition">
@@ -48,7 +48,7 @@
                 <div id="carousel-banner" class="carousel slide carousel-fade w-100 h-100 position-absolute top-0"
                      data-bs-ride="carousel">
                     <div class="carousel-inner h-100">
-                        <div class="carousel-item h-100">
+                        <div class="carousel-item active h-100">
                             <div class="motcham-fix d-flex mx-auto h-100">
                                 <div class="globe">
                                     <img class="h-100"
@@ -225,7 +225,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item active h-100">
+                        <div class="carousel-item h-100">
                             <div class="cosplay d-flex mx-auto h-100">
                                 <div class="globe">
                                     <img class="h-100"
@@ -735,8 +735,8 @@
         <div class="section-background"></div>
         <div class="overlay"></div>
         <div class="container">
-            <div class="row info-top">
-                <div class="col">
+            <div class="d-flex list-info">
+                <div class="item">
                     <h3>CƠ SỞ 1</h3>
                     <div class="descriptions">
                         <div class="paragraph transition">
@@ -744,7 +744,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="item">
                     <h3>CƠ SỞ 2</h3>
                     <div class="descriptions">
                         <div class="paragraph transition">
@@ -752,7 +752,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="item">
                     <h3>CƠ SỞ 3</h3>
                     <div class="descriptions">
                         <div class="paragraph transition">
@@ -760,7 +760,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="item">
                     <h3>CƠ SỞ 4</h3>
                     <div class="descriptions">
                         <div class="paragraph transition">
@@ -769,7 +769,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="item">
                     <h3>CƠ SỞ 5</h3>
                     <div class="descriptions">
                         <div class="paragraph transition">
@@ -777,23 +777,21 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row info-body">
-                <div class="col d-flex">
-                    <img src="asset/image/Section-info/SHAPE52.svg" alt="">
-                    <div class="title">KHÁM PHÁ LOCACAFE</div>
-                </div>
-                <div class="col">
-                    <div class="descriptions">
-                        <div class="paragraph transition">
-                            Tới <span style="color: rgb(92, 225, 230)">LocaCafe</span> để đổi quà và trải nghiệm đồ uống
-                            & Công nghệ Thế hệ mới
+                <div class="item w-100">
+                    <div class="col d-flex">
+                        <img src="asset/image/Section-info/SHAPE52.svg" alt="">
+                        <div class="title">KHÁM PHÁ LOCACAFE</div>
+                    </div>
+                    <div class="col">
+                        <div class="descriptions">
+                            <div class="paragraph transition">
+                                Tới <span style="color: rgb(92, 225, 230)">LocaCafe</span> để đổi quà và trải nghiệm đồ uống
+                                & Công nghệ Thế hệ mới
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row info-bottom">
-                <div class="col">
+                <div class="item">
                     <h3>CƠ SỞ 6</h3>
                     <div class="descriptions">
                         <div class="paragraph transition">
@@ -801,7 +799,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="item">
                     <h3>CƠ SỞ 7</h3>
                     <div class="descriptions">
                         <div class="paragraph transition">
@@ -809,7 +807,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="item">
                     <h3>CƠ SỞ 8</h3>
                     <div class="descriptions">
                         <div class="paragraph transition">
@@ -818,7 +816,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="item">
                     <h3>CƠ SỞ 9</h3>
                     <div class="descriptions">
                         <div class="paragraph transition">
@@ -826,7 +824,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="item">
                     <h3>CƠ SỞ 10</h3>
                     <div class="descriptions">
                         <div class="paragraph transition">
@@ -836,6 +834,7 @@
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
     <div id="banners" class="section">
@@ -878,12 +877,6 @@
                     <div class="banner">
                         <img class="h-100 rounded" src="asset/image/Section-banner/Poster_CosplayConnect.jpg" alt="">
                     </div>
-                    <div class="shape">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none"
-                             viewBox="0 0 176.06 194.4" class="" fill="rgba(255, 255, 255, 1)">
-                            <use xlink:href="#shape_naTySDmKMV"></use>
-                        </svg>
-                    </div>
                     <div class="element">
                         <div class="button-headline">
                             <p>Tìm hiểu ngay</p>
@@ -894,12 +887,6 @@
                     <div class="banner">
                         <img class="h-100 rounded" src="asset/image/Section-banner/Poster_FlexinTrenLocaCafe.jpg"
                              alt="">
-                    </div>
-                    <div class="shape">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none"
-                             viewBox="0 0 176.06 194.4" class="" fill="rgba(255, 255, 255, 1)">
-                            <use xlink:href="#shape_naTySDmKMV"></use>
-                        </svg>
                     </div>
                     <div class="element">
                         <div class="button-headline">
@@ -943,8 +930,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col p-0">
+            <div class="row videos">
+                <div class="col p-0" >
                     <div class="frame">
                         <div class="frame-background"></div>
                         <div class="video">
@@ -962,7 +949,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col p-0">
+                <div class="col p-0" >
                     <div class="frame">
                         <div class="frame-background"></div>
                         <div class="video">
@@ -980,7 +967,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col p-0">
+                <div class="col p-0" >
                     <div class="frame">
                         <div class="frame-background"></div>
                         <div class="video">
@@ -998,7 +985,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col p-0">
+                <div class="col p-0" >
                     <div class="frame">
                         <div class="frame-background"></div>
                         <div class="video">
@@ -1103,21 +1090,70 @@
         $(".tuitote, .pillow, .keychain").owlCarousel({
             items: 7,
             margin: 10,
+            rewind:true,
             autoplay:true,
             autoplayTimeout:2000,
             nav: true,
-            navText: ["<img src='asset/image/Section-info/next.svg'>", "<img src='asset/image/Section-info/next.svg'>"]
+            navText: ["<img src='asset/image/Section-info/next.svg'>", "<img src='asset/image/Section-info/next.svg'>"],
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:3,
+                    margin: 20,
+                },
+                600:{
+                    items:3,
+                    margin: 20,
+                },
+                768:{
+                    items:7,
+                    margin: 10,
+                }
+            }
         });
         $(".glass").owlCarousel({
             items: 5,
             nav: true,
+            rewind:true,
             autoplay:true,
             autoplayTimeout:1000,
             margin: 10,
-            navText: ["<img src='asset/image/Section-info/next.svg'>", "<img src='asset/image/Section-info/next.svg'>"]
+            navText: ["<img src='asset/image/Section-info/next.svg'>", "<img src='asset/image/Section-info/next.svg'>"],
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:3,
+                    margin: 20,
+                },
+                600:{
+                    items:3,
+                    margin: 20,
+                },
+                768:{
+                    items:5,
+                    margin: 10,
+                }
+            }
         });
         $("#handbook .frame").click(function () {
             $(this).find("iframe").show();
-        })
+        });
+        window.setInterval( 
+            function() {
+                if (window.innerWidth < 600) {
+                    $(".videos").addClass("owl-carousel owl-theme slider-videos");
+                } else {
+                    $(".videos").removeClass("owl-carousel owl-theme slider-videos");
+                }
+                $(".slider-videos").owlCarousel({
+                    rewind:true,
+                    stagePadding: 5,
+                    items:2,
+                    nav: true,
+                    autoplayTimeout:1000,
+                    navText: ["<img src='asset/image/Section-info/next.svg'>", "<img src='asset/image/Section-info/next.svg'>"],
+                });
+        },5000);
+        
     });
 </script>
