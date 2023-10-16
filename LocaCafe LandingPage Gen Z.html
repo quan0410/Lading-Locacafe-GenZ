@@ -25,20 +25,22 @@
                 <div class="container-fluid">
                     <div class="navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav flex">
-                            <a class="nav-link active" aria-current="page" href="LocaCafe LandingPage Gen Z.html">
+                            <a class="nav-link" aria-current="page" href="LocaCafe LandingPage Gen Z.html">
                                 <div class="image transition">
                                     <div class="image-background"></div>
                                 </div>
                             </a>
-                            <a class="nav-link active" href="#side">Cuộc thi</a>
+                            <a class="nav-link active" href="#slider">Cuộc thi</a>
                             <a class="nav-link" href="#gift">Vũ trụ quà</a>
                             <a class="nav-link" href="#info">Khám phá</a>
-                            <div class="animation d-flex w-100">
-                                <div class="button-background"></div>
-                                <div class="button-headline-top w-100 text-center rounded">
-                                    <p class="p-2 mb-0">Tham gia ngay</p>
+                            <a class="nav-link" href="#participation-form">
+                                <div class="animation d-flex w-100">
+                                    <div class="button-background"></div>
+                                    <div class="button-headline-top w-100 text-center rounded">
+                                        <p class="p-2 mb-0">Tham gia ngay</p>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -67,7 +69,7 @@
                                                 <div class="image">
                                                     <img class="image-slide"
                                                          src="asset/image/Section-slide/slide_1chamvanmonqua/Group%2016.png"
-                                                         height="55" alt="">
+                                                         height="75" alt="">
                                                 </div>
                                                 <div class="image">
                                                     <img class="image-slide"
@@ -447,7 +449,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="glass owl-carousel owl-theme w-75">
+                    <div class="glass owl-carousel owl-theme">
                         <div class="item">
                             <img class="rounded"
                                  src="asset/image/Section-gift/GoiChuU_CTThaQua_01GoiChuU_CTThaQua_01_0036_TuiTote_CTThaQua_GenZ_01.jpg"
@@ -856,9 +858,9 @@
                     <div class="shape">
                         <img class="h-100" src="asset/image/Section-banner/SHAPE33.svg" alt="">
                     </div>
-                    <div class="title d-flex flex-column">
-                        <h1>Loca Cafe</h1>
-                        <h1>Gen Z</h1>
+                    <div class="title d-flex flex-column gap-3">
+                        <div><h1>Loca Cafe</h1></div>
+                        <div><h1>Gen Z</h1></div>
                     </div>
                 </div>
             </div>
@@ -1079,6 +1081,33 @@
             </div>
         </div>
     </div>
+    <div class="scroll-bar w-100">
+        <nav class="navbar navbar-expand-lg mx-auto">
+            <div class="container-fluid">
+                <div class="navbar-collapse">
+                    <div class="navbar-nav flex ">
+                        <a class="nav-link" aria-current="page" href="LocaCafe LandingPage Gen Z.html">
+                            <div class="image transition">
+                                <div class="image-background"></div>
+                            </div>
+                        </a>
+                        <div class="d-flex text-center ">
+                            <a class="nav-link" href="#slider">Cuộc thi</a>
+                            <a class="nav-link" href="#gift">Vũ trụ quà</a>
+                            <a class="nav-link" href="#info">Khám phá</a>
+                        </div>
+                        <a class="nav-link" href="#participation-form">
+                            <div class="button-headline d-flex w-100 rounded px-3">
+                                <div class="w-100 text-center">
+                                    <p class="p-2 mb-0">Tham gia ngay</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -1154,6 +1183,12 @@
                     navText: ["<img src='asset/image/Section-info/next.svg'>", "<img src='asset/image/Section-info/next.svg'>"],
                 });
         },5000);
-        
+        var lastScrollTop = 0;
+        $(window).scroll(function(event){
+        var st = $(this).scrollTop();
+        if (st > lastScrollTop){
+            $(".scroll-bar").show();
+        }
+        });
     });
 </script>
